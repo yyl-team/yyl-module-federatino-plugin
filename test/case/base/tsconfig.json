@@ -10,27 +10,14 @@
     "sourceMap": false,
     "allowJs": true,
     "jsx": "react",
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "lib": ["es6", "dom"],
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "*"
-      ],
-      "~/*": [
-        "src/*"
-      ],
-      "~@/*": [
-        "src/components/*"
-      ],
-      "@/*": [
-        "../../../output/*"
-      ]
+      "*": ["*"],
+      "~/*": ["src/*"],
+      "~@/*": ["src/components/*"],
+      "@/*": ["../../../output/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }

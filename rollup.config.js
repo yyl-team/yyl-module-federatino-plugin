@@ -30,15 +30,18 @@ const config = {
       extensions: ['css', 'scss'],
       process(context, payload) {
         return new Promise((resolve, reject) => {
-          sass.render({
-            file: context
-          }, (err, result) => {
-            if (!err) {
-              resolve(result)
-            } else {
-              reject(err)
+          sass.render(
+            {
+              file: context
+            },
+            (err, result) => {
+              if (!err) {
+                resolve(result)
+              } else {
+                reject(err)
+              }
             }
-          })
+          )
         })
       },
       plugins: [autoprefixer(), postcssReporter()]
