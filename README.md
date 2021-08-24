@@ -1,0 +1,1 @@
+yyl-module-federation-plugin
